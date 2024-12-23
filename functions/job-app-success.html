@@ -1,0 +1,196 @@
+<style>
+    /* Style for the draggable prompt */
+    .draggable {
+        width: 450px;
+        padding: 20px;
+        background-color: white; /* White background */
+        border-radius: 10px;
+        position: fixed; /* Position fixed for center alignment */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for exact centering */
+        cursor: move;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Light modern shadow */
+        z-index: 3000;
+    }
+
+    /* Header Style */
+    .draggable h3 {
+        margin-top: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center; /* Center align the header */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #4caf50; /* Green color for the header */
+        margin-bottom: 10px;
+    }
+    
+    .line{
+        margin-bottom: 10px;
+    }
+
+    .prompt-message{
+        font-size:1rem;
+    }
+
+    /* Close button styling */
+    .draggable .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #C68E17; /* Green color for the button */
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .draggable .close-btn:hover {
+        opacity: 1; /* Hover effect for close button */
+    }
+
+    /* Centered vector image */
+    .draggable .vector {
+        margin-top: 15px;
+        width: 150px;
+        height: 150px;
+        background-image: url('../vector/loan-application-submitted-successfully-finance.jpg'); /* Add your vector image URL here */
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+    }
+@media (min-width: 300px) and (max-width: 600px) {
+    .draggable {
+        width: 300px;
+        padding: 5px;
+    }
+
+    /* Header Style */
+    .draggable h3 {
+        font-size: .75rem;
+    }
+    .prompt-message{
+        font-size:.75rem;
+    }
+    /* Centered vector image */
+    .draggable .vector {
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Styles for tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .draggable {
+        width: 300px;
+        padding: 5px;
+    }
+
+    /* Header Style */
+    .draggable h3 {
+        font-size: .75rem;
+    }
+    .prompt-message{
+        font-size:.75rem;
+    }
+    /* Centered vector image */
+    .draggable .vector {
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Styles for small laptops/desktops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .draggable {
+        width: 300px;
+        padding: 5px;
+    }
+
+    /* Header Style */
+    .draggable h3 {
+        font-size: .75rem;
+    }
+    .prompt-message{
+        font-size:.75rem;
+    }
+    /* Centered vector image */
+    .draggable .vector {
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Styles for larger desktops (1441px and above) */
+@media (min-width: 1441px) {
+    .draggable {
+        width: 450px;
+        padding: 20px;
+    }
+
+    /* Header Style */
+    .draggable h3 {
+        font-size: 1rem;
+    }
+    .prompt-message{
+        font-size:1rem;
+    }
+    /* Centered vector image */
+    .draggable .vector {
+        margin-top: 15px;
+        width: 150px;
+        height: 150px;
+    }
+}
+</style>
+
+<!-- Draggable Prompt Box -->
+<div class="draggable" id="draggablePrompt">
+    <span class="close-btn" onclick="closePrompt()">×</span>
+
+    
+    <!-- Vector Image -->
+    <div class="vector"></div>
+    <h3>Job Application Submitted Successfully!</h3><hr class="line">
+
+    <div class="prompt-message">
+        Our HR team will review your details and get in touch with you shortly. We appreciate your interest in joining our team and look forward to connecting with you soon.
+    </div>
+</div>
+
+<script>
+    // Make the prompt draggable
+    let prompt = document.getElementById("draggablePrompt");
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    prompt.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - prompt.offsetLeft;
+        offsetY = e.clientY - prompt.offsetTop;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            let x = e.clientX - offsetX;
+            let y = e.clientY - offsetY;
+            prompt.style.left = x + 'px';
+            prompt.style.top = y + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    // Close the prompt
+    function closePrompt() {
+        prompt.style.display = "none";
+    }
+</script>
