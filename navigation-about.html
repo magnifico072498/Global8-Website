@@ -1,0 +1,219 @@
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="nav-assets/css/styles.css">
+    <style>
+        .nav-head {
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-head:hover {
+            color: #b38b00;
+        }
+
+        .nav-contact {
+            color: #333;
+            font-weight: 500;
+            align-items: center;
+            display: flex;
+        }
+
+        .nav__link {
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav__link:hover {
+            color: #b38b00;
+        }
+
+        @media (max-width: 1118px) {
+            .nav-contact {
+                padding: 1.25rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-contact {
+                padding: 1.25rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-contact {
+                padding: 1.25rem 1.5rem;
+            }
+        }
+    </style>
+      <!--=============== AOS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
+  
+    <!--=============== HEADER ===============-->
+    <header class="header" data-aos="slide-down" data-aos-delay="800" data-aos-duration="1500">
+        <nav class="nav container">
+            <div class="nav__data">
+                <div class="logo-container">
+                    <a href="index.php" class="nav__logo">
+                        <img src="media/images/logos/global8-finance-corporation-logo.webp"
+                            alt="Global8 Finance Corporation Logo">
+                    </a>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.php" class="nav__link">Home</a>
+                    </li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-hand-coin-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Services</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="index.php#services" class="dropdown__link"><i
+                                                    class="ri-cash-line"></i> Business Loans</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-download-2-fill"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Download Form</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="media\docs\loan-application-sole-proprietor-form.docx"
+                                                download="loan-application-sole-proprietor-form.docx"
+                                                class="dropdown__link"><i class="ri-file-download-line"></i> Sole
+                                                Proprietorship</a>
+                                        </li>
+                                        <li>
+                                            <a href="media/docs/loan-application-partnership-corporation-form.docx"
+                                                download="loan-application-partnership-corporation-form.docx"
+                                                class="dropdown__link"><i class="ri-file-download-line"></i> Partnership
+                                                | Corporation | OPC</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-question-mark"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">How to apply for a business loan?</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="index.php#steps" class="dropdown__link"><i class="ri-article-line"></i> Read
+                                                me</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php#requirements" class="dropdown__link"><i
+                                                    class="ri-folder-5-line"></i> Requirements</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">About us</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="about-us.php" class="dropdown__link"><i class="ri-team-line"></i>
+                                                About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#testimonials" class="dropdown__link scroll-link"><i
+                                                    class="ri-video-line"></i> Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#faqs" class="dropdown__link scroll-link"><i
+                                                    class="ri-question-answer-line"></i> FAQs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-us" class="dropdown__link scroll-link"><i
+                                                    class="ri-mail-ai-line"></i> Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shield-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Safety and quality</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a class="dropdown__link"><i class="ri-service-line"></i> Terms of
+                                                Service</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__link"><i
+                                                    class="ri-git-repository-private-line"></i> Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+639177081102" class="dropdown__link nav-contact"><i class="ri-phone-line"></i> +63 917 708 1102</a>
+                    </li>
+                    <li>
+                        <a href="mailto:loans@global8.com.ph" class="dropdown__link nav-contact"><i
+                                class="ri-mail-line"></i> loans@global8.com.ph</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+    AOS.init({
+        duration: 1200, // Animation duration in ms
+        once: true, // Animate only once
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="nav-assets/js/main.js"></script>

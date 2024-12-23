@@ -1,0 +1,233 @@
+<style>
+  /* General layout styling */
+
+  #steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    box-sizing: border-box;
+  }
+
+  #steps img.img-fluid {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .steps-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 150px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .steps-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #FFF;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .step:hover {
+    background-color: #f7f9fc;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 2px;
+  }
+
+  .step-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .step-link {
+    color: #3498db;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .step-link:hover {
+    color: #B38B00;
+  }
+
+  a .responsive-button {
+    margin-top: 20px;
+    background-color: #b38b00;
+    background-image: linear-gradient(135deg, #b38b00, #d9a700);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 35%;
+    padding: 20px 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  a .responsive-button:hover {
+    background-image: linear-gradient(135deg, #d9a700, #b38b00);
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .apply-btn a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  @media (max-width: 1200px) {
+    #steps {
+      padding: 30px;
+    }
+
+    .steps-container {
+      padding: 70px 40px;
+    }
+
+    .steps-title {
+      font-size: 1px;
+    }
+
+    .step-text {
+      font-size: 0.95rem;
+    }
+
+    a .responsive-button {
+      font-size: 1.1rem;
+      padding: 17px 20px;
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #steps {
+      padding: 20px;
+    }
+
+    .steps-container {
+      padding: 50px 20px;
+    }
+
+    .steps-title {
+      font-size: 1.4rem;
+    }
+
+    .step-text {
+      font-size: 0.9rem;
+    }
+
+    a .responsive-button {
+      font-size: 1rem;
+      padding: 15px 20px;
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #steps {
+      padding: 10px;
+    }
+
+    .steps-container {
+      padding: 30px 10px;
+    }
+
+    .steps-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .step {
+      margin-bottom: 5px;
+    }
+
+    .step-text {
+      font-size: 0.85rem;
+    }
+
+    a .responsive-button {
+      font-size: 0.9rem;
+      padding: 15px 15px;
+      width: 50%;
+    }
+  }
+</style>
+
+<section id="steps" class="steps-section" data-aos="fade" data-aos-delay="200" data-aos-duration="3000"
+  data-aos-easing="ease-in-out">
+
+  <img data-aos="slide-up" data-aos-duration="1500"
+    src="media/images/backgrounds/easy-online-loan-application-process-steps.webp"
+    alt="Easy online loan application process steps" class="img-fluid" />
+
+  <div class="steps-container">
+    <h2 data-aos="fade-down" data-aos-duration="1500" class="steps-title"> Online Business Loan Application </h2>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+      <div class="step-number"><i class="ri-number-1"></i></div>
+      <p class="step-text">Review the <a href="#requirements" class="step-link scroll-link">business loan
+          requirements</a> to see if you qualify.</p>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+      <div class="step-number"><i class="ri-number-2"></i></div>
+      <p class="step-text">Click <strong>"APPLY NOW"</strong> or <strong>"GET PRE-QUALIFIED NOW!"</strong> button,
+        complete and submit the online form.</p>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+      <div class="step-number"><i class="ri-number-3"></i></div>
+      <p class="step-text">Wait for a call from one of our Loan Specialists for further assistance.</p>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+      <div class="step-number"><i class="ri-number-4"></i></div>
+      <p class="step-text">Download the appropriate form based on your business type<a href="#services"
+          class="step-link scroll-link">here</a>.</p>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+      <div class="step-number"><i class="ri-number-5"></i></div>
+      <p class="step-text">Email your fully accomplished form and required documents to <a
+          href="mailto:loans@global8.com.ph" class="step-link">loans@global8.com.ph</a>.</p>
+    </div>
+
+    <div class="apply-btn">
+      <a href="application.php"><button data-aos="zoom-out" data-aos-delay="600" data-aos-duration="2000" type="button"
+          class="responsive-button">APPLY NOW!</button></a>
+    </div>
+
+  </div>
+</section>

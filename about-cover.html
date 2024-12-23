@@ -1,0 +1,280 @@
+<style>
+    .parallax-container {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+        background-image: url('media/images/backgrounds/team-working-together-project.webp');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 10%;
+    }
+
+    .parallax-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 5;
+    }
+
+    .parallax-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        text-align: center;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .parallax-content h1 {
+        font-size: 3.5rem;
+        margin-top: 10vh;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin-bottom: 1rem;
+    }
+
+    .parallax-content p {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-top: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        word-wrap: break-word;
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+        padding: 5rem 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #b38b00;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        line-height: 1.8;
+        text-align: justify;
+        max-width: 800px;
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding: 0 100px;
+        width: 100%;
+        max-width: 1700px;
+    }
+
+    .who-we-are-image {
+        display: block;
+        margin: 1.5rem auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-container .vision-mission {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about-container .card {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-container .card h3 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .about-container .card p {
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 1200px) {
+        .parallax-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .parallax-content p {
+            font-size: 1rem;
+            max-width: 90%;
+        }
+
+        .about-container {
+            grid-template-columns: 1fr;
+            padding: 0 75px;
+        }
+
+        .about-us h2 {
+            font-size: 1.8rem;
+        }
+
+        .about-us p {
+            font-size: 0.95rem;
+        }
+
+        .about-container .card h3 {
+            font-size: 1.8rem;
+        }
+
+        .about-container .card p {
+            font-size: .95rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .parallax-container {
+            padding: 1.5rem 5%;
+        }
+
+        .about-container {
+            grid-template-columns: 1fr;
+            padding: 15px 30px;
+            margin: 0;
+        }
+
+        .about-us {
+            padding: 2.5rem 2rem;
+        }
+
+        .about-us h2 {
+            font-size: 1.4rem;
+        }
+
+        .about-us p {
+            font-size: 0.90rem;
+        }
+
+        .about-container .card {
+            padding: 1.5rem;
+        }
+
+        .about-container .card h3 {
+            font-size: 1.4rem;
+        }
+
+        .about-container .card p {
+            font-size: .90rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .parallax-container {
+            padding: 1rem 5%;
+        }
+
+        .about-container {
+            grid-template-columns: 1fr;
+            padding: 10px 5px;
+            margin: 0;
+        }
+
+        .about-us {
+            padding: 2rem 1.5rem;
+        }
+
+        .about-us h2 {
+            font-size: 1.4rem;
+        }
+
+        .about-us p {
+            font-size: 0.85rem;
+        }
+
+        .about-container .card {
+            padding: 1rem;
+        }
+
+        .about-container .card h3 {
+            font-size: 1.2rem;
+        }
+
+        .about-container .card p {
+            font-size: .85rem;
+        }
+    }
+</style>
+
+<div class="parallax-container">
+    <div class="parallax-content">
+        <h1 data-aos="fade-down" data-aos-duration="750" data-aos-easing="ease-in-out">About Us
+        </h1>
+        <span data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out">Home <i
+                class="ri-arrow-right-double-line"></i> <span style="font-weight: 500;">About Us</span></span>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">"Smart
+            Financing for the Filipinos on the Rise"</p>
+    </div>
+</div>
+
+<section class="about-us" data-aos="fade" data-aos-delay="200" data-aos-duration="3000" data-aos-easing="ease-in-out">
+    <div class="about-container">
+        <div class="who-we-are">
+            <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out">Who We Are</h2>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                <b>GLOBAL8 FINANCE CORPORATION</b>, Established in 2024, is dedicated to helping small to
+                large-scale enterprises achieve their business goals by providing financial solutions and creating
+                success stories. We build trusted relationships with clients through exceptional customer service
+                and fast financing processes that find the right solutions.
+            </p>
+            <img src="media/images/backgrounds/financing-experts-global8.webp" alt="Our Team Working Together"
+                class="who-we-are-image" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        </div>
+
+        <div class="vision-mission">
+            <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <img src="media/images/icons/vision-icon.webp" alt="Vision Icon"
+                    style="width: 100px; margin-bottom: 1rem;">
+                <h3>Our Vision</h3>
+                <p>
+                    To be the preferred financing partner, providing innovative and accessible financing solutions
+                    to fuel the Filipinos' successful business stories.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <img src="media/images/icons/mission-icon.webp" alt="Mission Icon"
+                    style="width: 100px; margin-bottom: 1rem;">
+                <h3>Our Mission</h3>
+                <p>
+                    To deliver financial solutions and foster the growth of Filipino individuals and business owners
+                    by offering a fast and reliable loaning experience with reasonable repayment terms.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

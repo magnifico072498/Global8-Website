@@ -1,0 +1,260 @@
+<style>
+  .why-choose-section {
+    text-align: center;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why-choose-container {
+    width: 100%;
+    max-width: 1400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 100px 50px;
+  }
+
+  .why-choose-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .why-choose-section .why-choose-description {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .why-choose-section .feature p {
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .feature-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .features .feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  .features .feature p {
+    font-size: 1rem;
+  }
+
+  /* Button Styling */
+  .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #b38b00;
+    background-image: linear-gradient(135deg, #b38b00, #d9a700);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-image: linear-gradient(135deg, #d9a700, #b38b00);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .why-choose-container {
+      padding: 70px 40px;
+    }
+
+    .why-choose-container h2 {
+      font-size: 1.8rem;
+    }
+
+    .why-choose-section .why-choose-description {
+      font-size: 1rem;
+    }
+
+    .features .feature h3 {
+      font-size: 1.1rem;
+    }
+
+    .features .feature p {
+      font-size: .95rem;
+    }
+
+    .feature {
+      padding: 15px;
+    }
+
+    .feature-icon {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .why-choose-container {
+      padding: 50px 30px;
+    }
+
+    .why-choose-container h2 {
+      font-size: 1.4rem;
+    }
+
+    .why-choose-section .why-choose-description {
+      font-size: .95rem;
+    }
+
+    .features .feature h3 {
+      font-size: 1rem;
+    }
+
+    .features .feature p {
+      font-size: .90rem;
+    }
+
+    .feature {
+      padding: 10px;
+    }
+
+    .feature-icon {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .why-choose-container {
+      padding: 30px 30px;
+    }
+
+    .why-choose-container h2 {
+      font-size: 1.2rem;
+    }
+
+    .why-choose-section .why-choose-description {
+      font-size: .9rem;
+    }
+
+    .features .feature h3 {
+      font-size: 1rem;
+    }
+
+    .features .feature p {
+      font-size: .85rem;
+    }
+
+    .feature {
+      padding: 10px 10px 7px;
+    }
+
+    .feature-icon {
+      margin-bottom: 1px;
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .feature {
+      flex: 1 1 calc(50% - 20px);
+      /* 2 Columns */
+      border-right: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature {
+      flex: 1 1 100%;
+      /* 1 Column */
+    }
+  }
+</style>
+
+<section class="why-choose-section" data-aos="fade" data-aos-duration="3000" data-aos-easing="ease-in-out">
+  <div class="why-choose-container">
+    <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out">
+      Why Choose Global8 Finance Corporation?
+    </h2>
+    <p class="why-choose-description" data-aos="fade" data-aos-duration="3000" data-aos-easing="ease-in-out">
+      We offer financial solutions that are tailored to your needs, with a commitment to innovation, security, and
+      growth.
+    </p>
+    <div class="features">
+      <div class="feature" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
+        data-aos-easing="ease-in-out">
+        <div class="feature-icon">
+          <img src="media/images/icons/business-loan-minimal-requirements.webp" alt="Simple Loan Process Icon">
+        </div>
+        <h3>Simple Loan Process</h3>
+        <p>Experience an easy and straightforward application process.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500"
+        data-aos-easing="ease-in-out">
+        <div class="feature-icon">
+          <img src="media/images/icons/financing-trusted-by-professionals.webp" alt="Trusted by Professionals Icon">
+        </div>
+        <h3>Trusted by Professionals</h3>
+        <p>Backed by experts, we ensure your business success.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+        data-aos-easing="ease-in-out">
+        <div class="feature-icon">
+          <img src="media/images/icons/business-loan-fast-approval.webp" alt="Fast Credit Approval Icon">
+        </div>
+        <h3>Fast Credit Approval</h3>
+        <p>Get your credit approved in no time with minimal requirements.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500"
+        data-aos-easing="ease-in-out">
+        <div class="feature-icon">
+          <img src="media/images/icons/business-loan-competitive-rates.webp" alt="Competitive Rates Icon">
+        </div>
+        <h3>Competitive Rates</h3>
+        <p>Flexible loan terms with affordable interest rates.</p>
+      </div>
+    </div>
+    <a href="application.php" class="cta-button" data-aos="fade" data-aos-delay="800" data-aos-duration="1500"
+      data-aos-easing="ease-in-out">
+      Grow your business with us!
+    </a>
+  </div>
+</section>

@@ -1,0 +1,306 @@
+  <style>
+    .faqs-container {
+      width: 100%;
+      background: #fff;
+      padding: 20px 100px;
+    }
+
+    .accordion {
+      width: 100%;
+      max-width: 1300px;
+      margin: 40px auto;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .faqs-title {
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #eee;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0a0000;
+      transition: background 0.3s ease, color 0.3s ease;
+      border: none;
+      border-left: 5px solid #fff;
+      transition: border-color 0.3s ease;
+      background-color: #fff;
+      width: 100%;
+      text-align: left;
+    }
+
+    .accordion-header:hover {
+      background: #f9f9f9;
+    }
+
+    .accordion-header.active {
+      background: #f3f3f3;
+      border-color: #b38b00;
+      color: #b38b00;
+    }
+
+    .accordion-header i {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+      color: #999;
+    }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-text i {
+      font-size: 24px;
+    }
+
+
+    .accordion-header.active .ri-arrow-down-s-line {
+      transform: rotate(180deg);
+      color: #b38b00;
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      background: #ffffff;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 20px;
+    }
+
+    .accordion-body.active {
+      max-height: 300px;
+      padding: 15px 20px;
+    }
+
+    .accordion-body p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      margin: 0;
+    }
+
+
+    /* Responsive design */
+    @media (max-width: 1200px) {
+      .faqs-container {
+        padding: 20px 25px;
+      }
+
+      .faqs-title {
+        font-size: 1.8rem;
+      }
+
+      .accordion-body p {
+        font-size: 0.95rem;
+      }
+
+      .accordion-header {
+        font-size: .95rem;
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .faqs-container {
+        padding: 15px 20px;
+      }
+
+      .faqs-title {
+        font-size: 1.4rem;
+      }
+
+      .accordion-body p {
+        font-size: 0.90rem;
+      }
+
+      .accordion-header {
+        font-size: .90rem;
+        padding: 15px 5px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .accordion {
+        margin-top: 0;
+      }
+
+      .faqs-container {
+        padding: 10px 10px;
+      }
+
+      .faqs-title {
+        font-size: 1.2rem;
+      }
+
+      .accordion-body p {
+        font-size: 0.85rem;
+      }
+
+      .accordion-header {
+        font-size: .85rem;
+        padding: 15px 1px;
+      }
+    }
+  </style>
+
+  <section class="faqs-container" id="faqs">
+    <div class="accordion">
+      <h2 class="faqs-title" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out">FAQs: For Your
+        Reference </h2>
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-1"></i> How do I apply?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            <b>There are 2 ways to apply for a non-collateral business loan with us:</b><br>
+            - Fill out the application form here and wait for a message or email.<br>
+            - Apply in our office or through any of our loan specialists, and accredited agents nationwide.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-2"></i> How do I get qualified for a business loan?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Your business should be operating for a minimum of one (1) year, and you should have a checking account (CA)
+            that has been active for at least six (6) months. See list of requirements <a href="#requirements">here</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-3"></i> Is it possible to get a loan without a checking
+            account?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            We only accept clients who have an existing checking account because we receive our client's loan payments
+            through post-dated checks (PDCs).
+          </p>
+        </div>
+      </div>
+
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-4"></i> How long will it take for my application to be
+            processed?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Processing takes up to within seven (7) business days from the receipt of complete application documents.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-5"></i> How do I find out if my business loan application has
+            been approved?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            You will receive an email, and a text message on the results of your application. A loan specialist or an accredited agent will contact you as soon as it has been approved!
+          </p>
+        </div>
+      </div>
+
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-6"></i>How do I pay for amortization?</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Payment is done through submission of post-dated checks (PDCs) upon the release of the loan.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-7"></i> Can I be granted a personal loan? </span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Global8 Finance Corp focuses to helping local businesses grow. Its business model and processes have not been developed to support personal loans as of the moment. 
+        </div>
+      </div>
+
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+        <button class="accordion-header">
+          <span class="icon-text"><i class="ri-number-8"></i> What is your interest rate? </span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            The interest rate is subject to the approval of the credit committee. The rate may vary depending on the loan amount, and period of term. Interested candidates are encouraged to apply and schedule a meeting with us to discuss this further.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Add more FAQs as needed -->
+  </section>
+
+  <script>
+    const faqHeaders = document.querySelectorAll('.accordion-header');
+    faqHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        const activeBody = document.querySelector('.accordion-body.active');
+
+        // Close currently active accordion if clicking a different one
+        if (activeBody && activeBody !== body) {
+          activeBody.classList.remove('active');
+          activeBody.previousElementSibling.classList.remove('active');
+        }
+
+        // Toggle current accordion
+        body.classList.toggle('active');
+        header.classList.toggle('active');
+      });
+    });
+  </script>

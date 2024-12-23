@@ -1,0 +1,181 @@
+<style>
+  /* General Style */
+  .testimonials-section {
+    padding: 100px 20px;
+    background-color: #222;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  /* Left Text Column */
+  .testimonial-text {
+    flex: 1 1 50%;
+    /* 50% width on large screens */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .testimonial-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #B38B00;
+    /* Accent color */
+  }
+
+  .testimonial-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-text .client-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+  }
+
+  .testimonial-text .client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .testimonial-text .client-info img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+
+  .testimonial-text .client-info p {
+    margin: 0;
+  }
+
+  /* Right Video Column */
+  .testimonial-video {
+    flex: 1 1 50%;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .testimonial-video video {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1200px) {
+
+    .testimonial-text,
+    .testimonial-video {
+      flex: 1 1 50%;
+      padding: 10px;
+    }
+
+    .testimonial-text p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .testimonial-text,
+    .testimonial-video {
+      flex: 1 1 100%;
+      padding: 10px;
+    }
+
+    .testimonial-text h2 {
+      font-size: 1.5rem;
+    }
+
+    .testimonial-text p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .testimonials-section {
+      padding: 20px;
+      background-color: #222;
+    }
+
+    .testimonial-text h2 {
+      font-size: 1.2rem;
+    }
+
+    .testimonial-text p {
+      font-size: 0.85rem;
+    }
+
+    .testimonial-text .client-info img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .testimonial-text .client-info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .client-info-role {
+      text-align: center;
+    }
+
+    .testimonial-video video {
+      width: 100%;
+      max-height: 200px;
+    }
+  }
+</style>
+
+<section id="testimonials" class="testimonials-section" data-aos="fade" data-aos-delay="200" data-aos-duration="3000"
+  data-aos-easing="ease-in-out">
+  <div class="testimonials-container" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+
+    <div class="testimonial-text">
+      <h2>What Our Client Says</h2>
+      <p>
+        Discover how Ms. Cecille Reyes, owner and founder of JACRAJ Construction Supplies Trading,
+        experienced the ease and efficiency of Global8's financial solutions.
+      </p>
+
+      <div class="client-info">
+
+        <img src="media/images/clients/jacraj-construction-supplies-trading-owner.jpg" alt="Ms. Cecille Reyes">
+        <div>
+          <p class="client-name">Ms. Cecille Reyes</p>
+          <p class="client-info-role">Owner & Founder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-video">
+      <video controls poster="media/images/clients/jacraj-construction-supplies-trading-video-thumbnail.jpg">
+        <source src="media/videos/jacraj-construction-supplies-trading.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+</script>

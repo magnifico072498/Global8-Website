@@ -1,0 +1,326 @@
+<style>
+  #requirements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loan-table-container {
+    width: 100%;
+    max-width: 1400px;
+    background: #fff;
+    padding: 100px 50px;
+  }
+
+  .loan-table-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+
+  table th,
+  table td {
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    /* Add border to cells */
+  }
+
+  table th {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  table .require {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  table td {
+    color: #555;
+    font-size: 1rem;
+  }
+
+  td i {
+    color: #B38B00;
+  }
+
+  th a {
+    color: #3498db;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  th a:hover {
+    color: #B38B00;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+
+  /* Stripes effect: alternate background color for rows */
+  table tr:nth-child(even) {
+    background-color: #f7f9fc;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  /* Bootstrap-like hover effect */
+  table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  /* Center icons in table cells */
+  table td i,
+  table th .i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* Center the icon */
+    font-size: 1.5rem;
+    /* Default icon size */
+  }
+
+  /* Responsive Table Styling */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .loan-table-container {
+      padding: 70px 40px;
+    }
+
+    .loan-table-title {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    table th,
+    table td {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+
+    table .require {
+      font-size: 1rem;
+    }
+
+    th a {
+      font-size: .8rem;
+    }
+
+  }
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .loan-table-container {
+      padding: 50px 20px;
+    }
+
+    .loan-table-title {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    table th,
+    table td {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+
+    table .require {
+      font-size: 1rem;
+    }
+
+    th a {
+      font-size: .8rem;
+    }
+
+    table td i {
+      font-size: 1rem;
+      /* Smaller icons on tablets */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .loan-table-container {
+      padding: 30px 10px;
+    }
+
+    .loan-table-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    table th {
+      font-size: 0.6rem;
+      padding: 8px 10px;
+    }
+
+    th a {
+      font-size: .6rem;
+    }
+
+    table td {
+      font-size: 0.65rem;
+      padding: 8px 10px;
+    }
+
+    table td i {
+      font-size: 1.2rem;
+      /* Slightly bigger icons on mobile */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    table td i {
+      font-size: 2rem;
+      /* Larger icons on larger screens */
+    }
+  }
+</style>
+
+<section id="requirements">
+  <div class="loan-table-container">
+    <h2 class="loan-table-title" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out">Business
+      Loan Requirements According To Business Type</h2>
+    <div class="table-responsive" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
+      data-aos-easing="ease-in-out">
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" class="require"><i class="ri-file-check-line"></i> Required Documents</th>
+            <th style="font-weight: 500;"><i class="ri-store-2-line i"></i></th>
+            <th style="font-weight: 500;"><i class="ri-group-line i"></i></th>
+            <th style="font-weight: 500;"><i class="ri-building-2-line i"></i></th>
+          </tr>
+          <tr>
+            <th class="center">Sole Proprietorship <br /><a href="sole-proprietorship.html">view</a></th>
+            <th class="center">Partnership <br /><a href="partnership.html">view</a></th>
+            <th class="center">Corporation & OPC<br /><a href="corporation.html">view</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Fully accomplished application form</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>2. Two (2) valid government issued IDs of the principal borrower</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>3. Latest three (3) months bank statements and bank certification</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>4. Mayor’s Permit/ Business Permit</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>5. 2x2 ID Picture of the principal borrower</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>6. Proof of billing for business and residence</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>7. Pictures of the business (internal and external)</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>8. Hand drawn sketch map of business and residence</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>9. DTI Certificate</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--part-->
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>10. SEC Certificate of Incorporation/Registration</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>11. BIR 2303</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>12. Latest Articles of Incorporation/ Partnership & By-Laws</td>
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>13. Partner’s Resolution</td>
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>14. Latest General Information Sheet (GIS)</td>
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>15. Secretary’s Certificate (Notarized)</td>
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-blank-line"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+          <tr>
+            <td>16. Latest AFS & ITR</td>
+            <td><i class="ri-checkbox-fill"></i></td> <!--sole-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--part-->
+            <td><i class="ri-checkbox-fill"></i></td> <!--corp-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

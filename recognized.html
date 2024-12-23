@@ -1,0 +1,127 @@
+  <style>
+    #recognized {
+      background-color: white; 
+      height: auto;
+      padding: 50px 0;
+    }
+
+    #recognized .container {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center; 
+      align-items: center; 
+      height: 100%;
+    }
+
+    .recognized-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color:#333;
+    }
+
+    .marquee-wrapper {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo-item {
+      width: 200px;
+      flex: 0 0 auto; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 30px;
+    }
+
+    .logo-item img {
+      max-width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    .logo-item img:hover {
+      filter: none;
+    }
+
+
+    @media (max-width: 1200px) {
+    .recognized-title {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+    }
+
+
+    @media (max-width: 768px) {
+    .recognized-title {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .recognized-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    }
+
+    @media (max-width: 600px) {
+      .logo-item {
+        width: 75px; 
+        margin: 0 10px;
+      }
+      #recognized {
+        padding: 30px 10px;
+        height: auto;
+      }  
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .logo-item {
+        width: 120px; 
+        margin: 0 15px;
+      }
+      #recognized {
+        padding: 40px 0;
+        height: auto;
+      }  
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      .logo-item {
+        width: 175px; 
+        margin: 0 20px;
+      }
+      #recognized {
+        padding: 50px 0;
+        height: auto;
+      }  
+    }
+
+  </style>
+  
+  <section id="recognized">
+    <div class="container">
+      <h2 class="recognized-title" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">Officially Recognized by <span class="text-gold">Trusted Financial Authorities</span></h2>
+      <div class="row"> 
+
+          <div class="marquee-wrapper">
+            <div class="logo-item" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="media/images/logos/anti-money-laundering-council-logo.webp" alt="Anti-Money Laundering Council logo - official emblem for financial compliance and regulations">
+            </div>
+            <div class="logo-item" data-aos="fade-left"  data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="media/images/logos/securities-exchange-commision-philippines-logo.webp" alt="Securities and Exchange Commission Philippines logo - regulatory authority for securities and investments in the Philippines">
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+

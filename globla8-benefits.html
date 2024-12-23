@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Benefits</title>
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            position: relative;
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Background Images */
+        #column1 {
+            background-image: url('media/images/backgrounds/team-building-beach-sunset.jpg');
+            z-index: 1;
+        }
+
+        #column2 {
+            background-image: url('media/images/backgrounds/diverse-business-team-achievement.jpg');
+            z-index: 2;
+        }
+
+        #column3 {
+            background-image: url('media/images/backgrounds/asian-entrepreneur-home-business-shipping.jpg');
+            z-index: 1;
+        }
+
+        /* Overlay Styling */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .column:hover .overlay {
+            opacity: 1;
+        }
+
+        .column:hover {
+            transform: scale(1.15);
+        }
+
+        /* Icon Styling */
+        .overlay i {
+            font-size: 3rem; /* Icon size */
+            margin-bottom: 10px;
+            color: #f1c40f; /* Yellowish color for icons */
+        }
+
+        .overlay h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .column {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                min-width: 100%;
+                height: 40vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                min-width: 100%;
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Section Content -->
+    <section class="flex-container">
+        <div class="column" id="column1">
+            <div class="overlay">
+                <i class="ri-team-line"></i>
+                <h3>Team Building</h3>
+            </div>
+        </div>
+        <div class="column" id="column2">
+            <div class="overlay">
+                <i class="ri-stairs-line"></i>
+                <h3>Career Development</h3>
+            </div>
+        </div>
+        <div class="column" id="column3">
+            <div class="overlay">
+                <i class="ri-hand-heart-line"></i>
+                <h3>Employee Benefits</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

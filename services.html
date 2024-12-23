@@ -1,0 +1,343 @@
+<style>
+  body {
+    background-color: #fff;
+  }
+
+  #services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-container {
+    padding: 100px 0px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 5;
+    margin-top: -17vh;
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  .services-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .services-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service-column {
+    flex: 1 1 30%;
+    max-width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1024px) {
+    .service-column {
+      flex: 1 1 45%;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .service-column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  .service-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    max-height: 325px;
+  }
+
+  .service-box:hover {
+    background-color: #333;
+    background-size: cover;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .service-box img {
+    height: 75px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .service-box:hover img {
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    height: 75px;
+    padding: 5px;
+  }
+
+  .service-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+
+  .service-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .service-box:hover h3 {
+    color: #fff;
+  }
+
+  .service-box:hover p {
+    color: #fff;
+  }
+
+  .service-box:hover button {
+    background-color: #000;
+  }
+
+  .service-box hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+
+  .download-btn button {
+    height: 40px;
+    background-color: #333;
+    color: #FFF;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-btn button:hover {
+    background-color: #C68E17;
+  }
+
+  @media (max-width: 600px) {
+    .service-box h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      font-size: .75rem;
+      margin-bottom: 5px;
+    }
+
+    .service-box hr {
+      display: none;
+    }
+
+    .service-box img {
+      height: 50px;
+      margin-bottom: 0;
+    }
+
+    .service-box {
+      padding: 10px;
+      height: auto;
+    }
+
+    .download-btn button {
+      font-size: .75rem;
+      height: 35px;
+    }
+  }
+
+  /* Styles for tablets (601px to 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .service-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      font-size: .75rem;
+    }
+
+    .service-box {
+      padding: 10px;
+      height: auto;
+    }
+
+    .download-btn button {
+      font-size: 1rem;
+      height: 35px;
+    }
+  }
+
+  /* Styles for small laptops/desktops (1025px to 1440px) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .service-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      font-size: .85rem;
+    }
+
+    .service-box {
+      background-color: #FFF;
+      padding: 15px;
+      height: auto;
+    }
+  }
+
+  /* Styles for larger desktops (1441px and above) */
+  @media (min-width: 1441px) {
+    .service-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      font-size: .95rem;
+    }
+
+    .service-box {
+      max-height: auto;
+    }
+  }
+
+
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .services-title {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    .services-container {
+      padding: 70px 40px;
+    }
+
+    .services-container {
+      margin-top: -15vh;
+    }
+
+    .service-box img {
+      height: 65px;
+    }
+
+    .service-box:hover img {
+      height: 65px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+
+    .services-title {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .services-container {
+      padding: 50px 20px;
+    }
+
+    .services-container {
+      margin-top: -7vh;
+    }
+
+    .service-box img {
+      height: 55px;
+    }
+
+    .service-box:hover img {
+      height: 55px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .services-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .services-container {
+      padding: 30px 10px;
+    }
+
+    .services-container {
+      margin-top: -5vh;
+    }
+
+    .service-box img {
+      height: 50px;
+    }
+
+    .service-box:hover img {
+      height: 50px;
+    }
+  }
+</style>
+
+
+<!-----------------SERVICES------------------>
+<section id="services">
+  <div class="services-container">
+    <!-- Section Title -->
+    <h2 class="services-title" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">Comprehensive
+      Business Loan Solutions to Fuel Your Growth</h2>
+
+    <!-- Service Boxes -->
+    <div class="services-row">
+      <div class="service-column" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200"
+        data-aos-easing="ease-in-out">
+        <div class="service-box">
+          <img src="media/images/icons/sole-proprietorship-business-loan-finance.webp"
+            alt="Business Sole Proprietorship Icon">
+          <h3>Sole Proprietorship</h3>
+          <p>Fuel your business dreams! Get the capital you need to grow with our Sole Proprietorship Loans.</p>
+          <hr>
+          <a href="media/docs/loan-application-sole-proprietor-form.docx" class="download-btn"><button
+              title="Download the application form for sole proprietorship">Download</button></a>
+        </div>
+      </div>
+      <div class="service-column" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200"
+        data-aos-easing="ease-in-out">
+        <div class="service-box">
+          <img src="media/images/icons/business-partnership-finance-shaking-hands.webp" alt="Business Partnership Icon">
+          <h3>Partnership</h3>
+          <p>Stronger together! Our Partnership Loans provide the funding you need to grow your collaborative vision.
+          </p>
+          <hr>
+          <a href="media/docs/loan-application-partnership-corporation-form.docx" class="download-btn"><button
+              title="Download the application form for partnership">Download</button></a>
+        </div>
+      </div>
+      <div class="service-column" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
+        data-aos-easing="ease-in-out">
+        <div class="service-box">
+          <img src="media/images/icons/corporation-business-loan-finance.webp" alt="Business Corporation Icon">
+          <h3>Corporation & OPC</h3>
+          <p>Fuel your corporation's ambitions! Our Corporation Loans are here to help you turn your vision into
+            reality.</p>
+          <hr>
+          <a href="media/docs/loan-application-partnership-corporation-form.docx" class="download-btn"><button
+              title="Download the application form for corporation and OPC">Download</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
